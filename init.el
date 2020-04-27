@@ -1,5 +1,6 @@
 ;;; init.el --- Initialization file for Emacs
-;;; Commentary: Emacs Startup File
+;;; Commentary:
+;;;   Emacs Startup File
 
 ;;; Code:
 
@@ -24,7 +25,7 @@
 
 ; Packages configuratios
 (require 'package)
-(setq package-enable-startup nil) ; disable package
+(setq package-enable-startup nil)
 
 ; Add MELPA repository
 (add-to-list 'package-archives
@@ -164,4 +165,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;; init.el ends here
+
 
