@@ -16,7 +16,7 @@ is installed:
  - emacs-filesystem-26.1-5.el7.noarch
  - emacs-debuginfo-26.1-5.el7.x86_64
 
-#Using:#
+#Installing:
 
 1) Clone a repository to you machine:
      git clone https://github.com/mcorreialima/MyEmacs.git
