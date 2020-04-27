@@ -9,5 +9,6 @@ copy:
 	
 deploy:
 
-
+clean:
+	@rm *~
 # EOF
