@@ -1,4 +1,9 @@
-;;
+;;; init.el --- Initialization file for Emacs
+;;; Commentary: Emacs Startup File
+
+;;; Code:
+
+;; Enable some special characteres
 (require 'iso-transl)
 
 ;; Remove startup message
@@ -21,7 +26,7 @@
 (require 'package)
 (setq package-enable-startup nil) ; disable package
 
-; Add MELPA repository 
+; Add MELPA repository
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize) ; package initilization
@@ -93,6 +98,11 @@
 ;;(load-theme 'cyberpunk t)
 (load-theme 'alect-black t)
 
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode t)
+  )
+
 ;
 ; Personal shortcuts
 ;
@@ -124,7 +134,7 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (alect-themes cyberpunk-theme color-theme-sanityinc-tomorrow ace-window all-the-icons neitree auto-complete which-key use-package try)))
+    (flycheck alect-themes cyberpunk-theme color-theme-sanityinc-tomorrow ace-window all-the-icons neitree auto-complete which-key use-package try)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
